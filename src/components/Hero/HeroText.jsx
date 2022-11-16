@@ -1,19 +1,14 @@
 import React from "react";
 // import { Link } from "react-scroll";
 // import ArrowPoint from "../Assets/lucrezia-arrow-point.png";
-import Stories from "../../assets/img/lucrezia-14.png";
-import Maisonette from "../../assets/img/lucrezia-22.png";
 import Automation from "../../assets/img/lucrezia-automation.png";
 
 const HeroText = () => {
   return (
-    <div className='text-white'>
-      <div className='block lg:flex justify-between items-center sm:p-12'>
-        <h1 className='w-[70%] lg:w-[40%]'>
-          <em
-            className='text-[2rem] md:text-6xl lg:text-8xl pl-[3rem]'
-            id='discover'
-          >
+    <div className='text-white flex items-center justify-center'>
+      <div className='block lg:flex justify-between items-center lg:w-[80%] sm:w-[90%] pt-5'>
+        <h1 className='w-[70%] lg:w-[60%]'>
+          <em className='text-[2rem] md:text-6xl lg:text-8xl' id='discover'>
             Discover the Height of Luxury Living
           </em>
           <span
@@ -23,28 +18,38 @@ const HeroText = () => {
             In Africa's Ultra Exclusive Neighbourhood.
           </span>
         </h1>
-        <p className='text-[15px] w-[60%] lg:w-[20%] py-6' id='hero_text'>
-          The Lucrezia is the rebirth of architectural elegance, mastery of
-          architectural complexities and flamboyance. It combines 3 rare
-          attributes- Beauty, Affluence and Style. <br />
-          <br />
+        <div className='text-[15px] w-[60%] lg:w-[25%] py-6' id='hero_text'>
+          <p>
+            {" "}
+            The Lucrezia is the rebirth of architectural elegance, mastery of
+            architectural complexities and flamboyance. It combines 3 rare
+            attributes- Beauty, Affluence and Style.
+          </p>
+
           <p>
             Comprising 16 maisonettes and 2 penthouses, Lucrezia is designed to
             be a trailblazer in Africa’s most expensive square meter, Banana
             Island.
           </p>
-          <img className='inline px-2 lg:px-4' src={Stories} alt='stories' />
-          <img
-            className='inline px-2 lg:px-4'
-            src={Maisonette}
-            alt='maisonette'
-          />
-          <img
-            className='inline px-2 lg:px-4 pt-6'
-            src={Automation}
-            alt='automation'
-          />
-        </p>
+          <div className='flex items-center justify-between' id='stories'>
+            <div className='hero__stories'>
+              <h1 className='text-[64px]'>14</h1>
+              <p className='text-[14px] text-center'>Stories</p>
+            </div>
+            <div className='hero__stories flex flex-col justify-center items-center'>
+              <h1 className='text-[64px] pt-2'>22</h1>
+              <p className='w-[50%] text-center text-[14px]' id="hero__bedroom">Bedroom Maisonette</p>
+            </div>
+            <div>
+              <img
+                className='inline px-2 lg:px-4'
+                src={Automation}
+                alt='automation'
+              />
+              <p className='text-[14px] pt-4'>Fully Automated</p>
+            </div>
+          </div>
+        </div>
       </div>
       {/* <div>
         <p className='text-center' id='hero_text'>
