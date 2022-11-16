@@ -20,11 +20,13 @@ const HeroText = () => {
             In Africa's Ultra Exclusive Neighbourhood.
           </span>
         </h1>
-        <p className='text-[15px] w-[60%] lg:w-[20%] py-6' id='hero_text'>
-          The Lucrezia is the rebirth of architectural elegance, mastery of
-          architectural complexities and flamboyance. It combines 3 rare
-          attributes- Beauty, Affluence and Style. <br />
-          <br />
+        <div className='text-[15px] w-[60%] lg:w-[20%] py-6' id='hero_text'>
+          <p>
+            The Lucrezia is the rebirth of architectural elegance, mastery of
+            architectural complexities and flamboyance. It combines 3 rare
+            attributes- Beauty, Affluence and Style.
+          </p>
+          {/* <br /> */}
           <p>
             Comprising 16 maisonettes and 2 penthouses, Lucrezia is designed to
             be a trailblazer in Africa’s most expensive square meter, Banana
@@ -41,7 +43,7 @@ const HeroText = () => {
             src={Automation}
             alt='automation'
           />
-        </p>
+        </div>
       </div>
       {/* <div>
         <p className='text-center' id='hero_text'>
