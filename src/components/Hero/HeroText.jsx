@@ -7,9 +7,9 @@ import Automation from "../Assets/lucrezia-automation.png";
 
 const HeroText = () => {
   return (
-    <div className='absolute w-full text-white'>
+    <div className='text-white flex m-auto'>
       <div className='block lg:flex justify-center items-center sm:p-12'>
-        <h1 className='w-[70%] top-[20%] lg:w-[60%]'>
+        <h1 className='w-[70%] lg:w-[60%]'>
           <span className='text-[2rem] md:text-6xl lg:text-8xl' id='discover'>
             Discover the Height of Luxury Living
           </span>
