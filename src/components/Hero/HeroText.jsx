@@ -1,9 +1,9 @@
 import React from "react";
 // import { Link } from "react-scroll";
 // import ArrowPoint from "../Assets/lucrezia-arrow-point.png";
-import Stories from "../Assets/lucrezia-14.png";
-import Maisonette from "../Assets/lucrezia-22.png";
-import Automation from "../Assets/lucrezia-automation.png";
+import Stories from "../../assets/img/lucrezia-14.png";
+import Maisonette from "../../assets/img/lucrezia-22.png";
+import Automation from "../../assets/img/lucrezia-automation.png";
 
 const HeroText = () => {
   return (

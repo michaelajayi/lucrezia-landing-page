@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import HeroImg from "../../assets/img/lucrezia-bg.png";
-import Vector from "../../assets/img/lucrezia-logo.png";
-import Fb from "../Assets/lucrezia-fb.png";
-import In from "../Assets/lucrezia-in.png";
-import Yt from "../Assets/lucrezia-yt.png";
-import { Link } from "react-scroll";
-import { FaBars, FaTimes } from "react-icons/fa";
 import { Link as ReactLink } from "react-router-dom";
+import { Link } from "react-scroll";
+import Vector from "../../assets/img/lucrezia-logo.png";
+import Fb from "../../assets/img/lucrezia-fb.png";
+import In from "../../assets/img/lucrezia-in.png";
+import Yt from "../../assets/img/lucrezia-yt.png";
 import "./Hero.css";
 import HeroText from "./HeroText";
 // import { Swiper, SwiperSlide } from "swiper/react";
@@ -18,7 +16,6 @@ const Hero = () => {
   return (
     <div className='w-full'>
       <div className='absolute w-full flex justify-between items-center'>
-
         <div className='w-full md:flex items-center justify-between absolute top-[1rem] lg:top-[2rem] px-4'>
           <div>
             <img className=' sm:ml-[2rem] w-[50px]' src={Vector} alt='Vector' />

@@ -14,6 +14,7 @@
 .long-section {
   position: relative;
   /* background-color: rgba(0, 0, 0, 0.75); */
+  /* background-color: rgba(255, 0, 0, 0.5); */
 }
 
 .long-section::after {
@@ -23,7 +24,7 @@
   background-size: cover;
   background-position: top center;
   object-fit: cover;
-  filter: brightness(0.3) blur(0.5px);
+  filter: brightness(0.4) blur(1px);
   position: absolute;
   height: 100%;
   width: 100vw;
