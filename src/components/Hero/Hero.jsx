@@ -1,6 +1,6 @@
 import React from "react";
-import HeroImg from "../Assets/lucrezia-hero.png";
-import Vector from "../Assets/lucrezia-vector.png";
+import HeroImg from "../../assets/img/lucrezia-hero.png";
+import Vector from "../../assets/img/lucrezia-vector.png";
 
 const Hero = () => {
   return (
