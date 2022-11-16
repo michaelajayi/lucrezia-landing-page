@@ -1,21 +1,24 @@
 import React from "react";
 // import { Link } from "react-scroll";
 // import ArrowPoint from "../Assets/lucrezia-arrow-point.png";
-import Stories from "../Assets/lucrezia-14.png";
-import Maisonette from "../Assets/lucrezia-22.png";
-import Automation from "../Assets/lucrezia-automation.png";
+import Stories from "../../assets/img/lucrezia-14.png";
+import Maisonette from "../../assets/img/lucrezia-22.png";
+import Automation from "../../assets/img/lucrezia-automation.png";
 
 const HeroText = () => {
   return (
-    <div className='text-white flex m-auto'>
-      <div className='block lg:flex justify-center items-center sm:p-12'>
-        <h1 className='w-[70%] lg:w-[60%]'>
-          <span className='text-[2rem] md:text-6xl lg:text-8xl' id='discover'>
+    <div className='text-white'>
+      <div className='block lg:flex justify-between items-center sm:p-12'>
+        <h1 className='w-[70%] lg:w-[40%]'>
+          <em
+            className='text-[2rem] md:text-6xl lg:text-8xl pl-[3rem]'
+            id='discover'
+          >
             Discover the Height of Luxury Living
-          </span>
+          </em>
           <span
-            className='block text-[1rem] lg:text-[30px] pt-2 lg:w-[35%] md:text-2xl'
-            id='hero_text'
+            className='block text-[1rem] lg:text-[30px] pt-2 lg:w-[60%] md:text-2xl'
+            id='hero__text'
           >
             In Africa's Ultra Exclusive Neighbourhood.
           </span>

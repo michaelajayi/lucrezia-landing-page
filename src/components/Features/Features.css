@@ -1,0 +1,33 @@
+.features-container {
+  position: relative;
+}
+
+.features-row {
+  row-gap: 5rem;
+}
+
+.features-heading {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.feature-text {
+  font-size: 0.75rem;
+  font-family: "Inter", sans-serif;
+}
+
+.features-quote {
+  font-family: "Italianno", cursive;
+  font-size: 40px;
+  line-height: 98%;
+  inline-size: 30%;
+  position: absolute;
+  bottom: 5%;
+  right: 20%;
+  border-right: 1px solid #ca7d71;
+  border-left: 1px solid #ca7d71;
+}
+
+.feature-icon {
+}

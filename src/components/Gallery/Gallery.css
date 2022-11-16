@@ -1,0 +1,28 @@
+.gallery__heading {
+  font-family: qielab, sans-serif;
+  font-size: 10rem;
+  color: #f1a1a1;
+  inline-size: 80%;
+  /* line-height: 12rem; */
+  position: absolute;
+  top: 0;
+  left: 10;
+}
+
+.gallery__container {
+  width: 80%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .gallery__heading {
+    font-size: 5rem;
+    inline-size: 100%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .gallery__heading {
+    font-size: 8rem;
+    inline-size: 100%;
+  }
+}

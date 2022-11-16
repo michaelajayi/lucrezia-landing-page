@@ -1,5 +1,12 @@
-* {
-  padding: 0;
+/* reset */
+*::before,
+*::after {
   margin: 0;
-  box-sizing: border-box;
+  padding: 0;
+}
+
+/* import Quielab font */
+@font-face {
+  font-family: qielab;
+  src: url("./assets/fonts/qeilab.otf");
 }
