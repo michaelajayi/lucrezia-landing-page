@@ -3,15 +3,15 @@ import "./App.css";
 import Copyright from "./components/Copyright/Copyright";
 import Footer from "./components/Footer/Footer";
 import LongSection from "./components/LongSection/LongSection";
-import Hero from "./components/Hero/Hero";
+import HeroSlider from "./components/HeroSlider/HeroSlider";
 
 function App() {
   return (
     <div className='App'>
-      <Hero />
-      <LongSection />
+      <HeroSlider />
+      <LongSection /> 
       <Footer />
-      <Copyright />
+      <Copyright /> 
     </div>
   );
 }

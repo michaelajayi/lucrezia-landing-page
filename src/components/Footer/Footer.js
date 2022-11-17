@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Col, Container, Form, Image, Row } from "react-bootstrap";
-
 import lucreziaLogo from "../../assets/img/lucrezia-logo.png";
 import rightFooterImg from "../../assets/img/right-footer-img.svg";
 import "./Footer.css";
