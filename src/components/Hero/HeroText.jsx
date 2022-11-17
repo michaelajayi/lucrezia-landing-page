@@ -45,7 +45,7 @@ const HeroText = ({ slider }) => {
             <div className='hero__stories flex flex-col justify-center items-center'>
               <h1 className='md:text-[64px] text-[20px]'>22</h1>
               <p
-                className='md:text-[14px] w-[60%] text-[10px] text-center '
+                className='md:text-[14px] w-[60%] text-[10px] text-center'
                 id='hero__bedroom'
               >
                 Bedroom Maisonette
