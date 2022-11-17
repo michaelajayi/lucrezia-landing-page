@@ -1,6 +1,4 @@
 import React from "react";
-// import { Link } from "react-scroll";
-// import ArrowPoint from "../Assets/lucrezia-arrow-point.png";
 import Automation from "../../assets/img/lucrezia-automation.png";
 
 const HeroText = ({ slider }) => {
@@ -17,6 +15,7 @@ const HeroText = ({ slider }) => {
           >
             {slider.subHeading}
           </em>
+          {/* <h1>go</h1> */}
         </h1>
         <div
           className='pt-2 text-[10px] md:text-[15px] w-[60%] lg:w-[25%] pb-6'
