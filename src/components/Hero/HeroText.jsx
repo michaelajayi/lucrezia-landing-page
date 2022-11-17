@@ -17,17 +17,11 @@ const HeroText = ({ slider }) => {
           </em>
           {/* <h1>go</h1> */}
         </h1>
-        <div
-          className='pt-2 text-[10px] md:text-[15px] w-[60%] lg:w-[25%] pb-6'
-          id='hero__text'
-        >
-          <p className='md:pt-4'>
-            {" "}
-            The Lucrezia is the rebirth of architectural elegance, mastery of
-            architectural complexities and flamboyance. It combines 3 rare
-            attributes- Beauty, Affluence and Style.
-          </p>
-
+        <p className='text-[15px] w-[60%] lg:w-[20%] py-6' id='hero_text'>
+          The Lucrezia is the rebirth of architectural elegance, mastery of
+          architectural complexities and flamboyance. It combines 3 rare
+          attributes- Beauty, Affluence and Style. <br />
+          <br />
           <p>
             Comprising 16 maisonettes and 2 penthouses, Lucrezia is designed to
             be a trailblazer in Africa’s most expensive square meter, Banana

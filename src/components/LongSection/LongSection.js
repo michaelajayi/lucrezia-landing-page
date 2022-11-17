@@ -12,7 +12,6 @@ const LongSection = () => {
       className='long-section d-flex flex-column align-items-center justify-content-center'
     >
       <Gallery />
-      <Button className='more__btn shadow-none border-0 my-5'>More</Button>
       <Features />
     </Container>
   );
