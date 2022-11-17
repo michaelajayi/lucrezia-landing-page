@@ -1,13 +1,24 @@
+.hero {
+  background-position: "center center";
+  background-repeat: "no-repeat";
+  background-size: "cover";
+  height: 100vh;
+  width: 100vw;
+}
+
 #ul__link {
   font-weight: 500;
   size: 15px;
   line-height: 29.03px;
 }
 
-#hero__font {
+#hero__text {
   font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 500;
 }
 
 #discover {
-  font-family: "qeilab", sans-serif;
+  font-family: "qielab", sans-serif;
+  /* font-style: italic; */
 }

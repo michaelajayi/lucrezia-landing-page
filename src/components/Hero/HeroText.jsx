@@ -7,15 +7,18 @@ import Automation from "../../assets/img/lucrezia-automation.png";
 
 const HeroText = () => {
   return (
-    <div className='absolute w-full text-white'>
-      <div className='block lg:flex justify-center items-center sm:p-12'>
-        <h1 className='w-[70%] top-[20%] lg:w-[60%]'>
-          <span className='text-[2rem] md:text-6xl lg:text-8xl' id='discover'>
+    <div className='text-white'>
+      <div className='block lg:flex justify-between items-center sm:p-12'>
+        <h1 className='w-[70%] lg:w-[40%]'>
+          <em
+            className='text-[2rem] md:text-6xl lg:text-8xl pl-[3rem]'
+            id='discover'
+          >
             Discover the Height of Luxury Living
-          </span>
+          </em>
           <span
-            className='block text-[1rem] lg:text-[30px] pt-2 lg:w-[35%] md:text-2xl'
-            id='hero_text'
+            className='block text-[1rem] lg:text-[30px] pt-2 lg:w-[60%] md:text-2xl'
+            id='hero__text'
           >
             In Africa's Ultra Exclusive Neighbourhood.
           </span>

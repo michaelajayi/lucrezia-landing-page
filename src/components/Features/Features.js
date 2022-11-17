@@ -1,19 +1,23 @@
-import React from "react";
+import React, { useId } from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 
 import { features } from "../../utils/constants";
 import "./Features.css";
 
 const Features = () => {
+  const id = useId();
+
   return (
-    <Container className='px-0 py-4 features-container'>
+    <Container className='px-0 py-4 features-container my-5'>
       <h3 className='features-heading text-center text-white mb-5'>Features</h3>
       <Row className='features-row'>
-        {features.map((feature) => (
+        {features.map((feature, index) => (
           <Col
+            key={`${index}-${id}`}
             lg={2}
             sm={6}
-            xs={12}
+            md={4}
+            xs={6}
             className='d-flex flex-column align-items-center justify-content-center gap-3'
           >
             <Image

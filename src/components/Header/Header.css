@@ -1,0 +1,57 @@
+.header-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header-container::after {
+  content: "";
+  background: url("../../assets/img/lucrezia-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  object-fit: cover;
+  /* filter: brightness(0.25); */
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  z-index: -10;
+  top: 0;
+  left: 0;
+}
+
+.header__social-links > a {
+  text-decoration: none;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  color: #f1a1a1;
+}
+
+.header__links > a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.header-content {
+  width: 80%;
+}
+
+.header-content__heading {
+  font-family: qielab, sans-serif;
+  font-size: 100px;
+  color: #fff;
+  inline-size: 80%;
+}
+
+.header-content__subheading {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 30px;
+  color: #fff;
+}

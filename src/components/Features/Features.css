@@ -3,7 +3,7 @@
 }
 
 .features-row {
-  row-gap: 5rem;
+  row-gap: 4.5rem;
 }
 
 .features-heading {
@@ -13,7 +13,7 @@
 }
 
 .feature-text {
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   font-family: "Inter", sans-serif;
 }
 
@@ -23,11 +23,12 @@
   line-height: 98%;
   inline-size: 30%;
   position: absolute;
-  bottom: 5%;
+  bottom: 2.5%;
   right: 20%;
   border-right: 1px solid #ca7d71;
   border-left: 1px solid #ca7d71;
 }
 
 .feature-icon {
+  transform: scale(0.8);
 }

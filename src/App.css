@@ -10,3 +10,8 @@
   font-family: qielab;
   src: url("./assets/fonts/qeilab.otf");
 }
+
+/* responsive font size */
+html {
+  font-size: calc(15px + 0.390625vw);
+}

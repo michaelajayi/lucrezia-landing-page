@@ -1,34 +1,39 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Button, Col, Container, Form, Image, Row } from "react-bootstrap";
 
 import lucreziaLogo from "../../assets/img/lucrezia-logo.png";
 import rightFooterImg from "../../assets/img/right-footer-img.svg";
+import StickyButton from "../StickyButton/StickyButton";
 import "./Footer.css";
 
 const Footer = () => {
+  const footerRef = useRef();
+
   return (
-    <Container fluid className='footer-container px-0'>
+    <Container fluid className='footer-container px-0' id='footer'>
       <Row className='align-items-stretch'>
         <Col lg={8} className='d-flex flex-column justify-content-between'>
-          <div className='footer-social-links d-flex gap-2 px-5 pt-5'>
-            <a href='#!'>In.</a>
-            <a href='#!'>Fb.</a>
-            <a href='#!'>Yt.</a>
+          <div className='d-flex flex-column gap-4 my-4 mx-4'>
+            <div className='footer-social-links d-flex gap-2 px-5 pt-5'>
+              <a href='#!'>In.</a>
+              <a href='#!'>Fb.</a>
+              <a href='#!'>Yt.</a>
+            </div>
+            <Image
+              src={lucreziaLogo}
+              alt='lucrezia-logo-text'
+              className='footer-lucrezia-logo px-5'
+            />
           </div>
-          <Image
-            src={lucreziaLogo}
-            alt='lucrezia-logo-text'
-            className='footer-lucrezia-logo px-5'
-          />
           <Form className='footer-form py-5 d-flex flex-column'>
-            <Button className='send-msg-btn border-0 shadow-none rounded-0 px-5 py-4'>
+            <p className='send-msg-btn border-0 shadow-none rounded-0 text-white'>
               Send us a message
-            </Button>
+            </p>
             <Form.Group className='mb-3' controlId='fullName'>
               <Form.Control
                 type='text'
                 placeholder='Full Name'
-                className='footer-form__control shadow-none border-0 rounded-0 py-3 px-2'
+                className='footer-form__control shadow-none border-0 rounded-0 py-2 px-2'
               />
             </Form.Group>
             <Row>
@@ -37,7 +42,7 @@ const Footer = () => {
                   <Form.Control
                     type='email'
                     placeholder='Email'
-                    className='footer-form__control shadow-none border-0 rounded-0 py-3 px-2'
+                    className='footer-form__control shadow-none border-0 rounded-0 py-2 px-2'
                   />
                 </Form.Group>
               </Col>
@@ -46,23 +51,23 @@ const Footer = () => {
                   <Form.Control
                     type='text'
                     placeholder='Phone'
-                    className='footer-form__control shadow-none border-0 rounded-0 py-3 px-2'
+                    className='footer-form__control shadow-none border-0 rounded-0 py-2 px-2'
                   />
                 </Form.Group>
               </Col>
             </Row>
-            <Form.Group className='mb-3 mt-5' controlId='message'>
+            <Form.Group className='mb-3 mt-4' controlId='message'>
               <Form.Control
                 as='textarea'
                 rows={5}
                 placeholder='Type message'
-                className='footer-form__control shadow-none border-0 rounded-0 py-3 px-2 mb-3'
+                className='footer-form__control shadow-none border-0 rounded-0 py-2 px-2 mb-3'
               />
             </Form.Group>
             <Button
               variant='primary'
               type='submit'
-              className='footer-send-btn border-0 shadow-none mt-4 align-self-end'
+              className='footer-send-btn border-0 shadow-none mt-4 align-self-auto align-self-md-end'
             >
               Send
             </Button>
