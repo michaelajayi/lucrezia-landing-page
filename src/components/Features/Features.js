@@ -8,7 +8,7 @@ const Features = () => {
   const id = useId();
 
   return (
-    <Container className='px-0 py-4 features-container my-5'>
+    <Container className='px-0 py-4 features-container my-5' id='features'>
       <h3 className='features-heading text-center text-white mb-5'>Features</h3>
       <Row className='features-row'>
         {features.map((feature, index) => (

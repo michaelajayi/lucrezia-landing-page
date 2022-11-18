@@ -1,7 +1,7 @@
 import React, { useId } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./HeroSlider.css";
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination, EffectFade, Keyboard, Navigation } from "swiper";
 import Bg from "../../assets/img/lucrezia-bg.png";
 import BgTwo from "../../assets/img/lucrezia-hero.png";
 
@@ -32,12 +32,14 @@ const HeroSlider = () => {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        // autoplay={{
-        //   delay: 4500,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 4500,
+          disableOnInteraction: false,
+        }}
         grabCursor={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        keyboard={{ enabled: true }}
+        effect={"fade"}
+        modules={[Autoplay, Pagination, Keyboard, Navigation, EffectFade]}
         className='mySwiper'
       >
         {sliders.map((slider, index) => (

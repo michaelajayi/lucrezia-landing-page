@@ -4,14 +4,16 @@ import Copyright from "./components/Copyright/Copyright";
 import Footer from "./components/Footer/Footer";
 import LongSection from "./components/LongSection/LongSection";
 import HeroSlider from "./components/HeroSlider/HeroSlider";
+import StickyButton from "./components/StickyButton/StickyButton";
 
 function App() {
   return (
     <div className='App'>
       <HeroSlider />
-      <LongSection /> 
+      <StickyButton />
+      <LongSection />
       <Footer />
-      <Copyright /> 
+      <Copyright />
     </div>
   );
 }

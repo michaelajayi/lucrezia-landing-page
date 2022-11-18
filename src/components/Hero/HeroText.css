@@ -1,0 +1,47 @@
+.hero__heading {
+  font-family: "qielab", sans-serif;
+  inline-size: 90%;
+  font-style: italic;
+  line-height: 1.1;
+}
+
+.hero__subheading {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  /* font-weight: 500; */
+  font-size: 30px;
+}
+
+.highlights__counter {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+}
+
+.highlights__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .hero__heading {
+    inline-size: 100%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .highlights__counter {
+    font-size: 44px;
+  }
+
+  .highlights__text {
+    font-size: 9px;
+  }
+
+  .automation-icon {
+    transform: scale(0.8);
+  }
+}

@@ -9,7 +9,10 @@ import img03 from "../../assets/img/banners/03.png";
 
 const Gallery = () => {
   return (
-    <Container className='d-flex flex-column align-items-center justify-content-center px-0 mx-0'>
+    <Container
+      className='d-flex flex-column align-items-center justify-content-center px-0 mx-0'
+      id='gallery'
+    >
       <h1 className='gallery__heading'>Lucrezia de' Medici</h1>
       <div className='gallery-container'>
         <Image src={img01} alt='img-01' className='first' />

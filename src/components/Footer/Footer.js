@@ -1,22 +1,40 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Button, Col, Container, Form, Image, Row } from "react-bootstrap";
 import lucreziaLogo from "../../assets/img/lucrezia-logo.png";
 import rightFooterImg from "../../assets/img/right-footer-img.svg";
-import StickyButton from "../StickyButton/StickyButton";
 import "./Footer.css";
 
 const Footer = () => {
-  const footerRef = useRef();
-
   return (
     <Container fluid className='footer-container px-0' id='footer'>
       <Row className='align-items-stretch'>
         <Col lg={8} className='d-flex flex-column justify-content-between'>
-          <div className='d-flex flex-column gap-4 my-4 mx-4'>
-            <div className='footer-social-links d-flex gap-2 px-5 pt-5'>
-              <a href='#!'>In.</a>
-              <a href='#!'>Fb.</a>
-              <a href='#!'>Yt.</a>
+          <div className='d-flex flex-column gap-4 mx-4'>
+            <div className='footer-social-links d-flex gap-2 px-5 pt-4'>
+              <a
+                href='https://www.linkedin.com/company/sujimoto-construction-limited'
+                className='hero__social-link'
+                target='_blank'
+                rel='noreferrer'
+              >
+                In.
+              </a>
+              <a
+                href='https://www.facebook.com/motoconstructionng'
+                className='hero__social-link'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Fb.
+              </a>
+              <a
+                href='https://www.youtube.com/channel/UC1Q3PEh495SxXY-npjegTkg'
+                className='hero__social-link'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Yt.
+              </a>
             </div>
             <Image
               src={lucreziaLogo}
@@ -66,7 +84,7 @@ const Footer = () => {
             <Button
               variant='primary'
               type='submit'
-              className='footer-send-btn border-0 shadow-none mt-4 align-self-auto align-self-md-end'
+              className='footer-send-btn border-0 shadow-none align-self-auto align-self-md-end'
             >
               Send
             </Button>

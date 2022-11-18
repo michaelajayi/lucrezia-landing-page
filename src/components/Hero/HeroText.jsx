@@ -1,28 +1,32 @@
 import React from "react";
+import { Col, Image, Row } from "react-bootstrap";
 import Automation from "../../assets/img/lucrezia-automation.png";
+
+import "./HeroText.css";
 
 const HeroText = ({ slider }) => {
   return (
     <div className='text-white flex items-center justify-center '>
-      <div className='block lg:flex justify-between items-center lg:w-[80%] sm:w-[80%] sm:pt-[1rem] xl:pt-[4rem] pt-[1.5rem] lg:pt-5 pl-4 md:px-0'>
-        <h1 className='w-[80%] lg:w-[60%]'>
-          <em className='text-[2rem] md:text-6xl lg:text-8xl' id='discover'>
+      <div className='block lg:flex justify-between items-start md:w-[85%] w-[90%] sm:pt-[1rem] pl-4 md:px-0'>
+        <div className='w-[80%] lg:w-[60%]'>
+          <h1
+            className='text-[2rem] md:text-6xl lg:text-6xl hero__heading'
+            id='discover'
+          >
             {slider.heading}
-          </em>
-          <em
-            className='block text-[1rem] md:text-[30px] pt-2 lg:w-[60%] md:text-2xl'
+          </h1>
+          <p
+            className='block text-[1rem] md:text-[30px] pt-2 lg:w-[60%] md:text-2xl hero__subheading'
             id='hero__text'
           >
             {slider.subHeading}
-          </em>
-          {/* <h1>go</h1> */}
-        </h1>
+          </p>
+        </div>
         <div
-          className='pt-2 text-[10px] md:text-[15px] w-[60%] lg:w-[25%] pb-6'
+          className='text-[10px] md:text-[15px] w-[60%] lg:w-[28%] pb-6'
           id='hero__text'
         >
-          <p className='md:pt-4'>
-            {" "}
+          <p className=''>
             The Lucrezia is the rebirth of architectural elegance, mastery of
             architectural complexities and flamboyance. It combines 3 rare
             attributes- Beauty, Affluence and Style.
@@ -33,7 +37,7 @@ const HeroText = ({ slider }) => {
             be a trailblazer in Africa’s most expensive square meter, Banana
             Island.
           </p>
-          <div
+          {/* <div
             className='flex flex-1 justify-between items-baseline text-center'
             id='stories'
           >
@@ -42,11 +46,7 @@ const HeroText = ({ slider }) => {
               <p className='md:text-[14px] text-[10px] text-center'>Stories</p>
             </div>
             <div className='hero__stories flex flex-col justify-center items-center'>
-              <h1
-                className='md:text-[64px] text-[20px]'
-              >
-                22
-              </h1>
+              <h1 className='md:text-[64px] text-[20px]'>22</h1>
               <p
                 className='md:text-[14px] w-[60%] text-[10px] text-center'
                 id='hero__bedroom'
@@ -65,7 +65,40 @@ const HeroText = ({ slider }) => {
                 Fully Automated
               </p>
             </div>
-          </div>
+          </div> */}
+          <Row className='align-items-stretch justify-content-start'>
+            <Col
+              md={4}
+              sm={4}
+              xs={4}
+              className='d-flex flex-column align-items-center px-0'
+            >
+              <p className='highlights__counter my-0'>14</p>
+              <p className='highlights__text my-0'>Stories</p>
+            </Col>
+            <Col
+              md={4}
+              sm={4}
+              xs={4}
+              className='d-flex flex-column align-items-center px-0'
+            >
+              <p className='highlights__counter my-0'>22</p>
+              <p className='highlights__text my-0'>Bedroom Maisonette</p>
+            </Col>
+            <Col
+              md={4}
+              sm={4}
+              xs={4}
+              className='d-flex flex-column align-items-center justify-content-between px-0'
+            >
+              <Image
+                className='highlights__counter mt-3 automation-icon'
+                src={Automation}
+                alt='automation'
+              />
+              <p className='highlights__text'>Fully Automated</p>
+            </Col>
+          </Row>
         </div>
       </div>
     </div>
