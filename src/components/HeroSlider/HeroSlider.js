@@ -2,8 +2,8 @@ import React, { useId } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./HeroSlider.css";
 import { Autoplay, Pagination, EffectFade, Keyboard, Navigation } from "swiper";
-import Bg from "../../assets/img/lucrezia-bg.png";
-import BgTwo from "../../assets/img/lucrezia-hero.png";
+import Bg from "../../assets/img/lucrezia-bg.jpg";
+import BgTwo from "../../assets/img/lucrezia-hero.jpg";
 
 // Import Swiper styles
 import "swiper/css";

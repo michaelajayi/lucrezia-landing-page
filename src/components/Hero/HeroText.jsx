@@ -16,7 +16,7 @@ const HeroText = ({ slider }) => {
             {slider.heading}
           </h1>
           <p
-            className='block text-[1rem] md:text-[30px] pt-2 lg:w-[60%] md:text-2xl hero__subheading'
+            className='block text-[20px] md:text-[30px] pt-2 lg:w-[60%] hero__subheading'
             id='hero__text'
           >
             {slider.subHeading}

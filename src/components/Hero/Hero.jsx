@@ -21,7 +21,7 @@ const Hero = ({ slider }) => {
     >
       <div className='md:flex items-center justify-between pt-[0.5rem] lg:pt-[1rem] px-4'>
         <div>
-          <img className=' sm:ml-[2rem]' src={Vector} alt='Vector' />
+          <img className='lucrezia-logo sm:ml-[2rem]' src={Vector} alt='Vector' />
         </div>
         <div className='gap-4 d-none d-md-flex'>
           <a href='#gallery' className='navlink__item text-white'>

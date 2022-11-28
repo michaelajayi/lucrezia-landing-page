@@ -103,4 +103,6 @@ const features = [
   },
 ];
 
-export { features };
+const apiEndpoint = "http://localhost:5001/api";
+
+export { features, apiEndpoint };
